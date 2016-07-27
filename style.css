@@ -1,0 +1,178 @@
+ul {
+    list-style: none; 
+
+    padding: 0;
+  
+}
+
+.p5{
+    padding-left: 1em;
+    background-color: rgb(219,219,219);
+    font-weight: bold;
+    font-family: Arial; 
+}
+
+.h4-red{
+    color: rgb(207,69,65);
+}
+
+.p1 {
+    font-weight: bold;
+    margin-top: -1em;
+    padding-bottom: 1em;
+}
+
+
+.right-block{
+    width: 30%;
+    float: right;
+    padding-right: 10%;
+}
+
+.left-block{
+    width: 42%;
+    float: left;
+    padding-left: 10%;
+}
+
+.rectangle-list{
+    padding-left: 2%;
+}
+
+.rectangle-list a{
+    position: relative;
+    display: block;
+    padding: .2em .2em .2em 2em;
+    margin: .5em 0 .5em 2.5em;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+.rectangle-list label{
+    position: relative;
+    display: inline-block;
+    padding: .2em 2em 1em 2em;
+    margin: .5em 0 .5em 2.5em;
+    color: #444;
+    text-decoration: none;
+    width: 15%;
+    text-align: center;
+}
+
+
+
+ .list-container{
+    display: inline-block;
+    width: 55%;
+}
+
+
+
+
+.rectangle-list label:hover{
+    background: #eee;
+}
+
+.rectangle-list a:hover{
+    background: #eee;
+}   
+
+.rectangle-list label:before{
+    content: '';
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: rgb(207,69,65);
+    height: 1.5em;
+    width: 1.5em;
+    transform: rotate(45deg);
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rectangle-list a:before{
+    content: '';
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: rgb(207,69,65);
+    height: 1.5em;
+    width: 1.5em;
+    transform: rotate(45deg);
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.rectangle-list label:after{
+    position: absolute; 
+    content: '';
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;
+}
+
+.rectangle-list a:after{
+    position: absolute; 
+    content: '';
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+.rectangle-list label:hover:after{
+      left: -.5em;
+    border-left-color: #fa8072; 
+}
+
+.rectangle-list a:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;             
+}   
+
+.skills-list{
+    margin-bottom: 2.5em;
+}
+
+.skills-list li{
+    margin-bottom: 1em;
+}
+
+.skills-list label{
+    display: inline-block;
+    width: 50%;
+}
+
+
+.draw-graph{
+    display: inline-block;
+    content: '';
+    width: 5em;
+    height: 1.2em;
+    background: rgb(204,51,51);
+}
+
+.data-list label{
+    display: inline-block;
+    width: 35%; 
+    font-weight: bold;
+}
+
+.data-list i{
+    
+}
+
+.other-info-list li{
+    position: absolute;
+    float: bottom;
+}
+
+
+
+
