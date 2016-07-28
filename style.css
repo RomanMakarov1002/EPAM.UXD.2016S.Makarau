@@ -1,99 +1,162 @@
 ul {
     list-style: none; 
-
     padding: 0;
-  
+  	
 }
+body{
+	margin: 0;
+}
+p{
+	font-family: "HelveticaNeue-Light", sans-serif;
+	font-weight: bold;
+}
+
+label{
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+h6{
+	padding-left: 1em;
+    background-color: rgb(219,219,219);
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+
+.p2,.p3,.p4{
+	font-size: 120%;
+}
+
+.p2 {
+	color: rgb(207,69,65);
+}
+
+.header{
+	width: 100%;
+}
+
+.header img{
+	width: 30%;
+	padding-top: 4%;
+	padding-left: 35%;
+	padding-bottom: 1%;
+}
+
+.content{
+	width: 100%;
+	height: 85em;
+}
+
+.upper-logo-area{
+	width: 100%;
+	padding-bottom: 7%;
+	height: 20%;
+}
+
+.upper-logo-area h1{
+	position: absolute;
+	display: inline;
+	padding-top: 7.5%;
+	padding-left: 2%;
+	font-family: sans-serif;
+	font-size: 3.8em;
+}
+
+.upper-logo-area h2{
+	display: inline;
+	font-family: sans-serif;
+	padding-left: 2%;
+	font-size: 2.6em;
+	font-weight: normal;
+	color: rgb(207,69,65);
+}
+
+.upper-logo-area .right-block{
+	padding-top: 11.2%;
+}
+
+.upper-logo-area .right-block p{
+	display: inline;
+}
+
+.upper-logo-area img{
+	width: 25%;
+}
+
+.logo-block {
+	width: 52%;
+	padding-bottom: 7%;
+}
+
 
 .p5{
     padding-left: 1em;
     background-color: rgb(219,219,219);
     font-weight: bold;
-    font-family: Arial; 
+    font-family: sans-serif;
 }
-
-.h4-red{
-    color: rgb(207,69,65);
-}
-
-.p1 {
-    font-weight: bold;
-    margin-top: -1em;
-    padding-bottom: 1em;
-}
-
 
 .right-block{
     width: 30%;
     float: right;
-    padding-right: 10%;
+    padding-right: 5.7%;
 }
 
+
 .left-block{
-    width: 42%;
+    width: 52%;
     float: left;
-    padding-left: 10%;
+    padding-left: 5.7%;
 }
+
+
+.formal-education, .about{
+	height: 20em;	
+}
+
+.skills-container, .work-experience{
+	height: 40em;
+}
+
 
 .rectangle-list{
     padding-left: 2%;
 }
 
-.rectangle-list a{
-    position: relative;
-    display: block;
-    padding: .2em .2em .2em 2em;
-    margin: .5em 0 .5em 2.5em;
-    color: #444;
-    text-decoration: none;
-    transition: all .3s ease-out;   
-}
-
 .rectangle-list label{
     position: relative;
     display: inline-block;
-    padding: .2em 2em 1em 2em;
+    padding: .2em 1em 1em 1em;
     margin: .5em 0 .5em 2.5em;
-    color: #444;
-    text-decoration: none;
     width: 15%;
     text-align: center;
 }
 
-
-
  .list-container{
+ 	position: relative;
     display: inline-block;
     width: 55%;
 }
 
-
-
-
-.rectangle-list label:hover{
-    background: #eee;
+.work-experience-container{
+ 	position: relative;
+    display: inline-block;
+    width: 71%;
+}
+}
+.list-container h6{
+    margin-top: -1em;
 }
 
-.rectangle-list a:hover{
-    background: #eee;
-}   
+.list-container p, .work-experience-container p{
+    margin-top:-1em;
+}
 
 .rectangle-list label:before{
-    content: '';
-    position: absolute; 
-    left: -2.5em;
-    top: 50%;
-    margin-top: -1em;
-    background: rgb(207,69,65);
-    height: 1.5em;
-    width: 1.5em;
-    transform: rotate(45deg);
-    line-height: 2em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.rectangle-list a:before{
     content: '';
     position: absolute; 
     left: -2.5em;
@@ -114,41 +177,23 @@ ul {
     left: -1em;
     top: 50%;
     margin-top: -.5em;
-    transition: all .3s ease-out;
 }
 
-.rectangle-list a:after{
-    position: absolute; 
-    content: '';
-    left: -1em;
-    top: 50%;
-    margin-top: -.5em;
-    transition: all .3s ease-out;               
+.rectangle-list li{
+	padding-top: 2em;
 }
-
-.rectangle-list label:hover:after{
-      left: -.5em;
-    border-left-color: #fa8072; 
-}
-
-.rectangle-list a:hover:after{
-    left: -.5em;
-    border-left-color: #fa8072;             
-}   
-
 .skills-list{
-    margin-bottom: 2.5em;
+    padding-top: 1em;
 }
 
 .skills-list li{
-    margin-bottom: 1em;
+    padding-top: 1em;
 }
 
 .skills-list label{
     display: inline-block;
     width: 50%;
 }
-
 
 .draw-graph{
     display: inline-block;
@@ -158,14 +203,13 @@ ul {
     background: rgb(204,51,51);
 }
 
-.data-list label{
-    display: inline-block;
-    width: 35%; 
-    font-weight: bold;
+.data-list{
+	padding-top: 1em;
 }
 
-.data-list i{
-    
+.data-list label{
+    display: inline-block;
+    width: 43%; 
 }
 
 .other-info-list li{
@@ -173,6 +217,23 @@ ul {
     float: bottom;
 }
 
+.footer{
+	width: 100%;
+	max-height: 5em;
+	height: 5em;
+}
+.footer ul{
+	margin-left: -15em;
+}
+.footer img{
+	float: left;
+	display: block;
+	max-width: 2em;
+}
+.footer li{
+	float: left;
+	padding-left: 20em;
+}
 
 
 
