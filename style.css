@@ -140,6 +140,7 @@ h6{
  	position: relative;
     display: inline-block;
     width: 55%;
+    float: right;
 }
 
 .work-experience-container{
