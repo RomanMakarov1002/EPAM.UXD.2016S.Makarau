@@ -234,14 +234,13 @@ h6{
 .p6 {
     float: left;
     margin-top: -.1em;
-    width: 7.5em;
+    width: 33%;
 }
 
 .draw-graph{
     display: block;
     content: '';
-    margin-left: 2.7em;
-    width: 15em;
+    width: 66%;
     height: 1.2em;
     float: left;
 }
@@ -294,7 +293,7 @@ h6{
 
 .draw-graph-background{
 	background-color: rgb(219,219,219);
-	width: 15em;
+	width: 100%;
 	height: 1.2em;
 	display: block;
 	position: relative;
@@ -321,17 +320,15 @@ h6{
 	max-height: 5em;
 	height: 5em;
 }
-.footer ul{
-	margin-left: -15em;
-}
+
 .footer img{
 	float: left;
-	display: block;
 	max-width: 2em;
 }
 .footer li{
 	float: left;
-	padding-left: 20em;
+	width: 33%;
+	left: 50%;
 }
 
 .footer .p3{
