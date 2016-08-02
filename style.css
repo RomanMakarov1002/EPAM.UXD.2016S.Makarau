@@ -26,6 +26,9 @@ h6{
 }
 
 
+.clear-both{
+	clear: both;
+}
 
 .p2,.p3,.p4{
 	font-size: 120%;
@@ -48,7 +51,6 @@ h6{
 
 .content{
 	width: 100%;
-	height: 85em;
 }
 
 .upper-logo-area{
@@ -118,6 +120,10 @@ h6{
 	height: 20em;	
 }
 
+.formal-education h6{
+	margin-bottom: -1em;
+}
+
 .skills-container, .work-experience{
 	height: 40em;
 }
@@ -148,6 +154,8 @@ h6{
  	position: relative;
     display: inline-block;
     width: 71%;
+    float: right;
+    margin-top: 1em;
 }
 }
 .list-container h6{
@@ -214,6 +222,7 @@ h6{
 
 .skills-list li{
     padding-top: 1em;
+    margin-bottom: -.4em;
 }
 
 .skills-list label{
@@ -221,12 +230,75 @@ h6{
     width: 50%;
 }
 
+
+.p6 {
+    float: left;
+    margin-top: -.1em;
+    width: 33%;
+}
+
 .draw-graph{
-    display: inline-block;
+    display: block;
     content: '';
-    width: 5em;
+    width: 66%;
+    height: 1.2em;
+    float: left;
+}
+
+.draw-graph-success, .success1, .success2, .success3, .success4, .success5, .success6, .success7, .success8, .success9, .success10, .success11, .success12{
+	display: block;
+    content: '';
     height: 1.2em;
     background: rgb(204,51,51);
+    z-index: 1;
+    position: relative;
+}
+
+.success1{
+	width: 67.6%;
+}
+.success2{
+	width: 89.8%;
+}
+.success3{
+	width: 56.2%;
+}
+.success4{
+	width: 100%;
+}
+.success5{
+	width: 93.4%;
+}
+.success6{
+	width: 61.3%;
+}
+.success7{
+	width: 65%;
+}
+.success8{
+	width: 80%;
+}
+.success9{
+	width: 100%;
+}
+.success10{
+	width: 56.6%;
+}
+.success11{
+	width: 89.8%;
+}
+.success12{
+	width: 93.7%;
+}
+
+.draw-graph-background{
+	background-color: rgb(219,219,219);
+	width: 100%;
+	height: 1.2em;
+	display: block;
+	position: relative;
+	z-index: 0;
+	margin-top: -1.2em;
 }
 
 .data-list{
@@ -248,18 +320,20 @@ h6{
 	max-height: 5em;
 	height: 5em;
 }
-.footer ul{
-	margin-left: -15em;
-}
+
 .footer img{
 	float: left;
-	display: block;
 	max-width: 2em;
 }
 .footer li{
 	float: left;
-	padding-left: 20em;
+	width: 33%;
+	left: 50%;
 }
 
-
+.footer .p3{
+	margin-top: .1em;
+	float: left;
+	margin-left: .3em;
+}
 
