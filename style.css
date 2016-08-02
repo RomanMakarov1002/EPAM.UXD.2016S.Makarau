@@ -40,6 +40,10 @@ h6{
 
 .header{
 	width: 100%;
+	background-image: url("logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 8em;
 }
 
 .header img{
@@ -51,31 +55,17 @@ h6{
 
 .content{
 	width: 100%;
+	overflow: hidden;
 }
 
 .upper-logo-area{
 	width: 100%;
-	padding-bottom: 7%;
+	padding-bottom: 2%;
 	height: 20%;
+	overflow: hidden;
 }
 
-.upper-logo-area h1{
-	position: absolute;
-	display: inline;
-	padding-top: 7.5%;
-	padding-left: 2%;
-	font-family: sans-serif;
-	font-size: 3.8em;
-}
 
-.upper-logo-area h2{
-	display: inline;
-	font-family: sans-serif;
-	padding-left: 2%;
-	font-size: 2.6em;
-	font-weight: normal;
-	color: rgb(207,69,65);
-}
 
 .upper-logo-area .right-block{
 	padding-top: 11.2%;
@@ -85,13 +75,39 @@ h6{
 	display: inline;
 }
 
-.upper-logo-area img{
-	width: 25%;
+.upper-left-block{
+	width: 57.7%;
+	padding-left: 0;
+	float: left;
+	overflow: hidden;
 }
 
-.logo-block {
-	width: 52%;
-	padding-bottom: 7%;
+.upper-left-block img{
+	width: 44%;
+	float: left;
+}
+
+.upper-names {
+	padding-top: 18%;
+	padding-left: 1%;
+	float: right;
+	overflow: hidden;
+}
+
+.upper-names h1{
+	
+	
+	font-family: sans-serif;
+	font-size: 3.6em;
+	margin:0;
+}
+
+.upper-logo-area h2{
+	font-family: sans-serif;
+	font-size: 2.4em;
+	font-weight: normal;
+	color: rgb(207,69,65);
+	margin:0;
 }
 
 
@@ -215,14 +231,15 @@ h6{
 
 .rectangle-list li{
 	padding-top: 2em;
+	overflow: hidden;
 }
 .skills-list{
-    padding-top: 1em;
 }
 
 .skills-list li{
     padding-top: 1em;
     margin-bottom: -.4em;
+    overflow: hidden;
 }
 
 .skills-list label{
@@ -230,6 +247,9 @@ h6{
     width: 50%;
 }
 
+.skills-list li:nth-child(4n+1){
+	padding-top: 3em;
+}
 
 .p6 {
     float: left;
@@ -337,3 +357,16 @@ h6{
 	margin-left: .3em;
 }
 
+.footer-mid-pos{
+    align-content: center;
+    position: relative;
+}
+
+/* float left  --          overflow hidden    
+    list - 1 na vse skili
+
+        backgroun image
+
+        personal data - tablica
+
+ */      
