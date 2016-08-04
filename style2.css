@@ -10,34 +10,32 @@ ul {
   	
 }
 body{
+    z-index: -1;
+    /*
+    background-color: #E8E3A5;
+   
+    background-color: #D4CF85;
+     
+    background-color: #BAB784;
+    */
     background-color: #DBD9BA;
     height: 100%;
     margin:0;
 }
 p{
-	font-family: "HelveticaNeue-Light", sans-serif;
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 label{
-	font-family: sans-serif;
 	font-weight: bold;
-	font-size: 120%;
+	font-size: 140%;
 }
 
 h6{
-	padding-left: 1em;
+	padding-left: 27px;
     background-color: rgb(219,219,219);
-    font-family: sans-serif;
-    font-size: 1.2em;
+    font-size: 150%;
     margin: 0;
-}
-.header{
-    height: 80px;
-    width: 100%;
-    background-size: 30%;
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .super-block{
@@ -46,6 +44,16 @@ h6{
     width: 1200px;
     min-height:100%;
     position:relative;
+
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-size: 30%;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .clear-both{
@@ -63,13 +71,7 @@ h6{
 .p3{
     font-weight: bold;
 }
-.second-footer{
-	width: 100%;
-	background-image: url("logo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 8em;
-}
+
 
 .content{
 	width: 100%;
@@ -99,14 +101,8 @@ h6{
 	padding-left: 0;
 	float: left;
 	overflow: hidden;
-
-/*
-    background-image: url('1.png');
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 44%;
-*/
 }
+
 
 .mid-block-area, .lower-block-area{
     overflow: hidden;
@@ -123,15 +119,15 @@ h6{
 
 .upper-names {
 	padding-top: 18%;
-	padding-left: 1%;
+	padding-left: 2%;
 	overflow: hidden;
 }
 
 .upper-logo{
     content: '';
     background: #EC1313;
-    height: 220px;
-    width: 350px;
+    height: 180px;
+    width: 250px;
     float: left;
     overflow: hidden;
     position: relative;
@@ -144,25 +140,25 @@ h6{
 
 .upper-logo-white-space{
     content: '';
-    height: 180px;
-    width: 180px;
-    margin: 20px 20px 20px 140px;
+    height: 150px;
+    width: 150px;
+    margin: 15px 15px 15px 80px;
     background-color: white;
     float: left;
     overflow: hidden;
 
 }
 
-.upper-names h1{    
-    font-size: 2.9em;
-    margin:0;
+.upper-names h1{	
+	font-size: 2.5em;
+	margin:0;
 }
 
 .upper-names h2{
-    font-size: 2.1em;
-    font-weight: normal;
-    color: #EC1313;
-    margin:0;
+	font-size: 1.8em;
+	font-weight: normal;
+	color: #EC1313;
+	margin:0;
 }
 
 .p5{
@@ -172,25 +168,12 @@ h6{
     font-family: sans-serif;
 }
 
-.right-block{
-    width: 30%;
-    float: right;
-    padding-right: 5.7%;
-}
-
-
-.left-block{
-    width: 52%;
-    float: left;
-    padding-left: 5.7%;
+.p8{
+    font-weight: bold;
 }
 
 .formal-education h6{
 	margin-bottom: -1em;
-}
-
-.about{
-    font-weight: bold;
 }
 
 .rectangle-list{
@@ -208,8 +191,7 @@ h6{
 
  .list-container{
  	position: relative;
-    display: inline-block;
-    width: 55%;
+    width: 65%;
     float: right;
     margin-top: 1em;
 }
@@ -246,8 +228,8 @@ h6{
 
 .p7 {
     float: left;
-    margin-left: 2em;
-    margin-top: -.1em;
+    margin-left: 3%;
+    margin-top: 2px;
     width: 22%;
     text-align: center;
 }
@@ -347,7 +329,12 @@ h6{
 }
 
 .data-list{
-	padding-top: 1em;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+.data-list li p{
+    display: inline;
 }
 
 .data-list label{
@@ -362,7 +349,7 @@ h6{
 
 .footer{
     position: absolute;
-    width: 95%;
+	width: 95%;
     padding-left: 2.5%;
     padding-right: 2.5%;
     padding-bottom: 20px;
@@ -370,16 +357,16 @@ h6{
 }
 
 .footer img{
-    float: left;
-    max-width: 2em;
+	float: left;
+	max-width: 2em;
 }
 .footer ul{
     padding-left: 2%;
 }
 
 .footer li{
-    float: left;
-    width: 31%;
+	float: left;
+	width: 31%;
     text-align: center;
 }
 
@@ -425,4 +412,26 @@ h6{
     position: relative;
     display: inline-block;
 
+}
+
+.custom-block {
+    width: 43%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.empty-block{
+      width: 50%;
+    height: 105px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo-area{
+     width: 46%;
+    padding-right: 2.5%;
+    float: left;
+    overflow: hidden;
 }
