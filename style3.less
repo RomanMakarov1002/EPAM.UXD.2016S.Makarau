@@ -37,6 +37,20 @@ h4 {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.word-wrapper{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.footer-image-wraper{
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-y: 5px;
+    background-position-x: 5px;
+}
+
 .make-inline-block {
     display: inline-block;
     overflow: hidden;
@@ -57,9 +71,7 @@ h4 {
 }
 
 .p2, .p3, .p6{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    .word-wrapper;
 }
 
 .p4{
@@ -134,16 +146,14 @@ h4 {
 }
 .data-list {
     margin-top: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    .work-wrapper;
     input {
         border: 0;
         background-color: white;
         font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: black;
         font-size: 120%;
-        width: 63%;
+        width: 60%;
     }
     label {
         display: inline-block;
@@ -280,28 +290,19 @@ h4 {
         &:first-child {
             &:before {
                 background-image: url('twitter.png');
-                background-repeat: no-repeat;
-                background-size: 80%;
-                background-position-y: 8px;
-                background-position-x: 5px;
+                .footer-image-wraper;
             }
             margin-left: -60px;
         }
         &:nth-child(2):before {
             background-image: url('Phone Icon copy.png');
-            background-repeat: no-repeat;
-            background-size: 80%;
-            background-position-y: 5px;
-            background-position-x: 5px;
+          .footer-image-wraper;
         }
         margin-left: 30px;
         &:last-child {
             &:before {
                 background-image: url('reload.png');
-                background-repeat: no-repeat;
-                background-size: 80%;
-                background-position-y: 5px;
-                background-position-x: 5px;
+               .footer-image-wraper;
             }
             margin-left: 30px;
         }
