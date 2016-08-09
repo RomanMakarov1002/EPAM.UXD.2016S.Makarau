@@ -15,7 +15,8 @@ body{
     margin:0;
 }
 p{
-	font-family: "HelveticaNeue-Light", sans-serif;
+	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 120%;
 }
 
 label{
@@ -24,13 +25,16 @@ label{
 	font-size: 120%;
 }
 
-h6{
-	padding-left: 1em;
+h4{
+	padding-left: 27px;
     background-color: rgb(219,219,219);
     font-family: sans-serif;
-    font-size: 1.2em;
+    font-size: 150%;
     margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
 .header{
     height: 80px;
     width: 100%;
@@ -38,9 +42,10 @@ h6{
     background-image: url("logo.png");
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
-.super-block{
+.main-container{
     margin:auto;
     background-color: white;
     width: 1200px;
@@ -53,76 +58,58 @@ h6{
 }
 
 .p2,.p3,.p4{
-	font-size: 120%;
+    margin:0;
+}
+
+.p2, .p3, .p6{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.p2,.p3 {
+    font-size: 150%;
 }
 
 .p2 {
-	color: #EC1313;
+	color: #FF7C7C;
 }
 
 .p3{
     font-weight: bold;
 }
-.second-footer{
-	width: 100%;
-	background-image: url("logo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 8em;
-}
 
 .content{
 	width: 100%;
-	overflow: hidden;
     padding-bottom: 100px;
+}
+
+.mid-block-area, .lower-block-area, .upper-logo-area{
+    overflow: hidden;
+}
+
+.mid-block-area{
+    margin-bottom: 3%;
 }
 
 .upper-logo-area{
 	width: 100%;
 	padding-bottom: 2%;
 	height: 20%;
-	overflow: hidden;
 }
-
-
 
 .upper-logo-area .right-block{
-	padding-top: 11.2%;
+	padding-top: 12.2%;
 }
 
-.upper-logo-area .right-block p{
-	display: inline;
-}
 
 .upper-left-block{
 	width: 57.7%;
 	padding-left: 0;
-	float: left;
-	overflow: hidden;
-
-/*
-    background-image: url('1.png');
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 44%;
-*/
-}
-
-.mid-block-area, .lower-block-area{
-    overflow: hidden;
-}
-
-.upper-left-block img{
-	width: 44%;
-	float: left;
-    background-image: url('1.png');
-    background-repeat: no-repeat;
-    background-position: left;
-
+    float: left;
 }
 
 .upper-names {
-	padding-top: 18%;
+	padding-top: 19.5%;
 	padding-left: 1%;
 	overflow: hidden;
 }
@@ -133,43 +120,46 @@ h6{
     height: 220px;
     width: 350px;
     float: left;
-    overflow: hidden;
-    position: relative;
 }
-
-.upper-logo:active{
-    background-color: yellow;
-}
-
 
 .upper-logo-white-space{
     content: '';
     height: 180px;
     width: 180px;
-    margin: 20px 20px 20px 140px;
+    margin: 20px 20px 20px 145px;
     background-color: white;
-    float: left;
-    overflow: hidden;
-
 }
 
 .upper-names h1{    
-    font-size: 2.9em;
+    font-size: 290%;
     margin:0;
 }
 
 .upper-names h2{
-    font-size: 2.1em;
+    font-size: 210%;
     font-weight: normal;
     color: #EC1313;
     margin:0;
 }
 
-.p5{
-    padding-left: 1em;
-    background-color: rgb(219,219,219);
+.p6 {
+    float: left;
+    margin-top: -.2px;
+    width: 40%;
     font-weight: bold;
-    font-family: sans-serif;
+}
+
+
+.p7 {
+    float: left;
+    margin-left: 36px;
+    margin-top: 0;
+    width: 22%;
+    text-align: center;
+}
+
+.p4{
+    color: #706C6C;
 }
 
 .right-block{
@@ -185,49 +175,43 @@ h6{
     padding-left: 5.7%;
 }
 
+.data-list{
+    margin-top:0;
+    padding-top: 18px;
+}
+
+.data-list label{
+    display: inline-block;
+    width: 37%; 
+}
+
+.data-list input{
+
+    border: 0;
+    background-color: white;
+    color: black;
+    font-size: 120%;
+    width: 60%;
+}
+
 .formal-education h6{
-	margin-bottom: -1em;
+	margin-bottom: -18px;
 }
 
 .about{
     font-weight: bold;
 }
 
-.rectangle-list{
-    padding-left: 2%;
-}
-
-.rectangle-list label{
-    position: relative;
-    display: inline-block;
-    padding: .2em 1em 1em 1em;
-    margin: .5em 0 .5em 2.5em;
-    width: 15%;
-    text-align: center;
-}
-
- .list-container{
- 	position: relative;
-    display: inline-block;
-    width: 55%;
+ .list-container, .work-experience-container{
     float: right;
-    margin-top: 1em;
+}
+
+.list-container{
+    width: 55%;
 }
 
 .work-experience-container{
- 	position: relative;
-    display: inline-block;
     width: 65%;
-    float: right;
-    margin-top: 1em;
-}
-}
-.list-container h6{
-    margin-top: -1em;
-}
-
-.list-container p, .work-experience-container p{
-    margin-top:-1em;
 }
 
 .rectangle-list li:before{
@@ -239,30 +223,18 @@ h6{
     float: left;
 }
 
-.right-block .formal-education .rectange-list p{
-    float: left;
-    display: block;
-}
-
-.p7 {
-    float: left;
-    margin-left: 2em;
-    margin-top: -.1em;
-    width: 22%;
-    text-align: center;
-}
-
 .rectangle-list li{
 	padding-top: 2em;
     padding-left: 2%;
 	overflow: hidden;
 }
+
 .skills-list{
 }
 
 .skills-list li{
-    padding-top: 1em;
-    margin-bottom: -.4em;
+    padding-top: 18px;
+    margin-bottom: -8px;
     overflow: hidden;
 }
 
@@ -272,28 +244,20 @@ h6{
 }
 
 .skills-list li:nth-child(4n+1){
-	padding-top: 3em;
-}
-
-.p6 {
-    float: left;
-    margin-top: -.1em;
-    width: 33%;
-    font-weight: bold;
+	padding-top: 50px;
 }
 
 .draw-graph{
-    display: block;
     content: '';
-    width: 66%;
-    height: 1.2em;
-    float: left;
+    width: 60%;
+    height: 22px;
+    float: right;
 }
 
 .draw-graph-success, .success1, .success2, .success3, .success4, .success5, .success6, .success7, .success8, .success9, .success10, .success11, .success12{
 	display: block;
     content: '';
-    height: 1.2em;
+    height: 22px;
     background: #EC1313;
     z-index: 1;
     position: relative;
@@ -339,25 +303,11 @@ h6{
 .draw-graph-background{
 	background-color: rgb(219,219,219);
 	width: 100%;
-	height: 1.2em;
+	height: 22px;
 	display: block;
 	position: relative;
 	z-index: 0;
-	margin-top: -1.2em;
-}
-
-.data-list{
-	padding-top: 1em;
-}
-
-.data-list label{
-    display: inline-block;
-    width: 37%; 
-}
-
-.other-info-list li{
-    position: absolute;
-    float: bottom;
+	margin-top: -22px;
 }
 
 .footer{
@@ -369,10 +319,6 @@ h6{
     bottom: 0;
 }
 
-.footer img{
-    float: left;
-    max-width: 2em;
-}
 .footer ul{
     padding-left: 2%;
 }
@@ -383,7 +329,17 @@ h6{
     text-align: center;
 }
 
+.footer li:first-child{
+    margin-left: -70px;
+}
 
+.footer li:nth-child(2){
+    margin-left: 30px;
+}
+
+.footer li:last-child{
+    margin-left: 30px;
+}
 
 .footer li:before{
     content: '';
@@ -394,8 +350,9 @@ h6{
     display: inline-block;
     margin-bottom: -20px;
     margin-right: 4px;
-
+    cursor: pointer;
 }
+
 .footer li:first-child:before{
     background-image: url('twitter.png');
     background-repeat: no-repeat;
@@ -424,5 +381,5 @@ h6{
     align-content: center;
     position: relative;
     display: inline-block;
-
+    cursor: pointer;
 }

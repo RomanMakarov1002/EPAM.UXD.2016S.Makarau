@@ -10,20 +10,13 @@ ul {
   	
 }
 body{
-    z-index: -1;
-    /*
-    background-color: #E8E3A5;
-   
-    background-color: #D4CF85;
-     
-    background-color: #BAB784;
-    */
     background-color: #DBD9BA;
     height: 100%;
     margin:0;
 }
 p{
 	font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 120%;
 }
 
 label{
@@ -31,20 +24,22 @@ label{
 	font-size: 140%;
 }
 
-h6{
+h4{
 	padding-left: 27px;
     background-color: rgb(219,219,219);
     font-size: 150%;
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.super-block{
+.main-container{
     margin:auto;
     background-color: white;
     width: 1200px;
     min-height:100%;
     position:relative;
-
 }
 
 .header{
@@ -54,71 +49,71 @@ h6{
     background-image: url("logo.png");
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
 .clear-both{
 	clear: both;
 }
 
-.p2,.p3,.p4{
-	font-size: 120%;
+.custom-block{
+    width: 43%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
 }
 
+.custom-block-with-margin{
+    margin-top: 115px;
+}
+
+.p2,.p3,.p4{
+    margin:0;
+}
+
+.p-bold{
+    font-weight: bold;
+}
+
+.p2,.p3 {
+    font-size: 150%;
+}
+
+.p2, .p3, .p6{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
 .p2 {
-	color: #EC1313;
+	color: #FF7C7C;
 }
 
 .p3{
     font-weight: bold;
 }
 
+.p4{
+    color: #706C6C;
+}
 
 .content{
 	width: 100%;
-	overflow: hidden;
     padding-bottom: 100px;
 }
 
-.upper-logo-area{
-	width: 100%;
-	padding-bottom: 2%;
-	height: 20%;
-	overflow: hidden;
-}
 
-
-
-.upper-logo-area .right-block{
-	padding-top: 11.2%;
-}
-
-.upper-logo-area .right-block p{
-	display: inline;
-}
-
-.upper-left-block{
-	width: 57.7%;
-	padding-left: 0;
-	float: left;
-	overflow: hidden;
-}
-
-
-.mid-block-area, .lower-block-area{
-    overflow: hidden;
-}
-
-.upper-left-block img{
-	width: 44%;
-	float: left;
-    background-image: url('1.png');
-    background-repeat: no-repeat;
-    background-position: left;
-
+.logo-area{
+    width: 46%;
+    padding-right: 2.5%;
+    float: left;
 }
 
 .upper-names {
-	padding-top: 18%;
+	padding-top: 19%;
 	padding-left: 2%;
 	overflow: hidden;
 }
@@ -129,87 +124,57 @@ h6{
     height: 180px;
     width: 250px;
     float: left;
-    overflow: hidden;
-    position: relative;
 }
-
-.upper-logo:active{
-    background-color: yellow;
-}
-
 
 .upper-logo-white-space{
     content: '';
     height: 150px;
     width: 150px;
-    margin: 15px 15px 15px 80px;
+    margin: 15px 15px 15px 85px;
     background-color: white;
-    float: left;
-    overflow: hidden;
-
 }
 
 .upper-names h1{	
-	font-size: 2.5em;
+	font-size: 250%;
 	margin:0;
 }
 
 .upper-names h2{
-	font-size: 1.8em;
+	font-size: 180%;
 	font-weight: normal;
 	color: #EC1313;
 	margin:0;
 }
 
-.p5{
-    padding-left: 1em;
-    background-color: rgb(219,219,219);
-    font-weight: bold;
-    font-family: sans-serif;
+
+.data-list{
+    padding-bottom: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.p8{
-    font-weight: bold;
+.data-list input{
+    border: 0;
+    background-color: white;
+    color: black;
+    font-size: 120%;
 }
 
-.formal-education h6{
-	margin-bottom: -1em;
-}
 
-.rectangle-list{
-    padding-left: 2%;
-}
-
-.rectangle-list label{
-    position: relative;
+.data-list label{
     display: inline-block;
-    padding: .2em 1em 1em 1em;
-    margin: .5em 0 .5em 2.5em;
-    width: 15%;
-    text-align: center;
+    width: 37%; 
 }
 
- .list-container{
- 	position: relative;
+
+ .list-container, .work-experience-container{
     width: 65%;
     float: right;
-    margin-top: 1em;
-}
-
-.work-experience-container{
- 	position: relative;
-    display: inline-block;
-    width: 65%;
-    float: right;
-    margin-top: 1em;
-}
-}
-.list-container h6{
-    margin-top: -1em;
 }
 
 .list-container p, .work-experience-container p{
-    margin-top:-1em;
+    margin-top: 0;
 }
 
 .rectangle-list li:before{
@@ -221,9 +186,17 @@ h6{
     float: left;
 }
 
-.right-block .formal-education .rectange-list p{
+.rectangle-list li{
+    padding-top: 20px;
+    padding-left: 2%;
+    overflow: hidden;
+}
+
+.p6 {
     float: left;
-    display: block;
+    margin-top: -2px;
+    width: 33%;
+    font-weight: bold;
 }
 
 .p7 {
@@ -234,17 +207,14 @@ h6{
     text-align: center;
 }
 
-.rectangle-list li{
-	padding-top: 2em;
-    padding-left: 2%;
-	overflow: hidden;
-}
-.skills-list{
+
+.skills-list {
+    margin-top: -10px
 }
 
 .skills-list li{
-    padding-top: 1em;
-    margin-bottom: -.4em;
+    padding-top: 10px;
+    margin-bottom: -5px;
     overflow: hidden;
 }
 
@@ -254,28 +224,20 @@ h6{
 }
 
 .skills-list li:nth-child(4n+1){
-	padding-top: 3em;
-}
-
-.p6 {
-    float: left;
-    margin-top: -.1em;
-    width: 33%;
-    font-weight: bold;
+	padding-top: 50px;
 }
 
 .draw-graph{
-    display: block;
     content: '';
     width: 66%;
-    height: 1.2em;
+    height: 22px;
     float: left;
 }
 
 .draw-graph-success, .success1, .success2, .success3, .success4, .success5, .success6, .success7, .success8, .success9, .success10, .success11, .success12{
 	display: block;
     content: '';
-    height: 1.2em;
+    height: 22px;
     background: #EC1313;
     z-index: 1;
     position: relative;
@@ -321,30 +283,11 @@ h6{
 .draw-graph-background{
 	background-color: rgb(219,219,219);
 	width: 100%;
-	height: 1.2em;
+	height: 22px;
 	display: block;
 	position: relative;
 	z-index: 0;
-	margin-top: -1.2em;
-}
-
-.data-list{
-    padding-top: 8px;
-    padding-bottom: 16px;
-}
-
-.data-list li p{
-    display: inline;
-}
-
-.data-list label{
-    display: inline-block;
-    width: 37%; 
-}
-
-.other-info-list li{
-    position: absolute;
-    float: bottom;
+	margin-top: -22px;
 }
 
 .footer{
@@ -356,10 +299,6 @@ h6{
     bottom: 0;
 }
 
-.footer img{
-	float: left;
-	max-width: 2em;
-}
 .footer ul{
     padding-left: 2%;
 }
@@ -370,8 +309,6 @@ h6{
     text-align: center;
 }
 
-
-
 .footer li:before{
     content: '';
     background-color: red;
@@ -381,8 +318,21 @@ h6{
     display: inline-block;
     margin-bottom: -20px;
     margin-right: 4px;
-
+    cursor: pointer;
 }
+
+.footer li:first-child{
+    margin-left: -100px;
+}
+
+.footer li:nth-child(2){
+    margin-left: 50px;
+}
+
+.footer li:last-child{
+    margin-left: 50px;
+}
+
 .footer li:first-child:before{
     background-image: url('twitter.png');
     background-repeat: no-repeat;
@@ -411,27 +361,5 @@ h6{
     align-content: center;
     position: relative;
     display: inline-block;
-
-}
-
-.custom-block {
-    width: 43%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.empty-block{
-      width: 50%;
-    height: 105px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.logo-area{
-     width: 46%;
-    padding-right: 2.5%;
-    float: left;
-    overflow: hidden;
+    cursor: pointer;
 }

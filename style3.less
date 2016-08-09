@@ -1,0 +1,315 @@
+@color-main-red: #d9534f;
+@color-main-light-red: #FF7C7C;
+@color-background-silver: #DBD9BA;
+@color-header-gray: rgb(219,219,219);
+@color-light-gray: #706C6C;
+
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+body {
+    background-color: @color-background-silver;
+    height: 100%;
+    margin: 0;
+}
+p {
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-size: 120%;
+}
+label {
+    font-weight: bold;
+    font-size: 140%;
+}
+h4 {
+    padding-left: 27px;
+    background-color: @color-header-gray;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.make-inline-block {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.p2, .p3, .p4{
+    margin: 0;
+}
+
+.p2,.p3 {
+    font-size: 150%;
+}
+.p2 {
+    color: @color-main-light-red;
+}
+.p3 {
+    font-weight: bold;
+}
+
+.p2, .p3, .p6{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.p4{
+    color: @color-light-gray;
+}
+
+.row {
+    margin: 0;
+    padding-bottom: 25px;
+}
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+.logo-wrapper {
+    margin-bottom: -140px;
+}
+.main-container {
+    margin: auto;
+    background-color: white;
+    width: 1200px;
+    min-height: 100%;
+    position: relative;
+}
+.header {
+    height: 80px;
+    width: 100%;
+    background-size: 30%;
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.content {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+.upper-names {
+    margin-top: 45%;
+    margin-left: -15px;
+    h1 {
+        font-size: 320%;
+        margin: 0;
+    }
+    h2 {
+        font-size: 220%;
+        font-weight: normal;
+        color: @color-main-light-red;
+        margin: 0;
+    }
+}
+.upper-logo {
+    content: '';
+    background: @color-main-red;
+    height: 220px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.upper-logo-white-space {
+    content: '';
+    height: 180px;
+    width: 180px;
+    margin: 20px 20px 20px 115px;
+    background-color: white;
+    float: left;
+    overflow: hidden;
+}
+.personal-data {
+    margin-top: 150px;
+}
+.data-list {
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    input {
+        border: 0;
+        background-color: white;
+        font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: black;
+        font-size: 120%;
+        width: 63%;
+    }
+    label {
+        display: inline-block;
+        width: 37%;
+        margin: 0;
+    }
+}
+.about {
+    p {
+        font-weight: bold;
+    }
+    margin-bottom: 25px;
+}
+
+.work-wrapper{
+    margin-top: 25px;
+}
+
+.rectangle-list {
+    li {
+        padding-top: 20px;
+        padding-left: 2%;
+        overflow: hidden;
+        &:before {
+            content: '';
+            background: @color-main-red;
+            height: 25px;
+            width: 25px;
+            transform: rotate(45deg);
+            float: left;
+        }
+    }
+}
+.p6 {
+    float: left;
+    margin-top: -2px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.p7 {
+    float: left;
+    margin-left: 3%;
+    margin-top: 2px;
+    width: 22%;
+    text-align: center;
+}
+.list-container {
+    float: left;
+}
+.work-experience-container {
+    float: left;
+    width: 70%;
+}
+.skills-list {
+    margin-top: -10px;
+    li {
+        padding-top: 10px;
+        margin-bottom: -5px;
+        overflow: hidden;
+        &:nth-child(4n+1) {
+            padding-top: 50px;
+        }
+    }
+    label {
+        display: inline-block;
+        width: 50%;
+    }
+}
+.progress-bar {
+    height: 20px;
+}
+.success1 {
+    width: 67.6%;
+}
+.success2 {
+    width: 89.8%;
+}
+.success3 {
+    width: 56.2%;
+}
+.success4 {
+    width: 100%;
+}
+.success5 {
+    width: 93.4%;
+}
+.success6 {
+    width: 61.3%;
+}
+.success7 {
+    width: 65%;
+}
+.success8 {
+    width: 80%;
+}
+.success9 {
+    width: 100%;
+}
+.success10 {
+    width: 56.6%;
+}
+.success11 {
+    width: 89.8%;
+}
+.success12 {
+    width: 93.7%;
+}
+.footer {
+    position: absolute;
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 20px;
+    bottom: 0;
+    ul {
+        padding-left: 2%;
+    }
+    li {
+        float: left;
+        width: 31%;
+        text-align: center;
+        &:before {
+            content: '';
+            background-color: @color-main-red;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: -20px;
+            margin-right: 4px;
+            cursor: pointer;
+        }
+        &:first-child {
+            &:before {
+                background-image: url('twitter.png');
+                background-repeat: no-repeat;
+                background-size: 80%;
+                background-position-y: 8px;
+                background-position-x: 5px;
+            }
+            margin-left: -60px;
+        }
+        &:nth-child(2):before {
+            background-image: url('Phone Icon copy.png');
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position-y: 5px;
+            background-position-x: 5px;
+        }
+        margin-left: 30px;
+        &:last-child {
+            &:before {
+                background-image: url('reload.png');
+                background-repeat: no-repeat;
+                background-size: 80%;
+                background-position-y: 5px;
+                background-position-x: 5px;
+            }
+            margin-left: 30px;
+        }
+    }
+}
+.footer-mid-pos {
+    align-content: center;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
